@@ -1,0 +1,249 @@
+@media (max-width: 1199px)
+	.container
+		max-width: 970px
+	.welcome
+		min-height: 300px
+	.schulbildung
+		&__slider
+			width: 800px
+	.skills
+		&__items
+			width: 100%
+		&__item
+			width: 450px
+	.sprachen
+		&__items
+			width: 100%
+		&__item
+			width: 450px
+
+@media (max-width: 991px)
+	.container
+		max-width: 750px
+	.header__link
+		&:hover
+			&::after
+				width: 15px
+	.me
+		&__img
+			width: 50%
+		&__wrapper
+			width: 50%
+			padding-bottom: 0
+		&__mt
+			margin-top: 0
+		&__phone, &__adress, &__birth, &__citizen
+			display: block
+			width: 100%
+		&__adress
+			span
+				justify-content: flex-start
+		&__number, &__street, &__date, &__statename
+			font-style: italic
+	.welcome
+		min-height: 350px
+	.schulbildung
+		&__slider
+			width: 560px
+	.skills
+		&__items
+			width: 100%
+		&__item
+			width: 360px
+	.sprachen
+		&__items
+			width: 100%
+		&__item
+			width: 360px
+	.hobbys
+		&__items
+			padding: 0 10px
+		&__list
+			width: 100%
+	.footer
+		&__wrapper
+			width: 100%
+
+@media (max-width: 767px)
+	body.lock
+		overflow: hidden
+	.header__link
+		font-size: 24px
+		&::after
+			content: ''
+			width: 0
+			height: 0
+	.header__list
+		display: block
+		width: 100%
+		li
+			margin-bottom: 20px
+	.header__burger
+		display: block
+		position: relative
+		width: 30px
+		height: 20px
+		z-index: 6
+		&::before, &::after
+			content: ''
+			background-color: #fff
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			transition: all 0.3s
+	.header__burger
+		&::before
+			top: 0
+	.header__burger
+		&::after
+			bottom: 0
+	.header__burger
+		span
+			position: absolute
+			background-color: #fff
+			right: 0
+			width: 100%
+			height: 2px
+			top: 9px
+			transition: all 0.3s
+	.header__body
+		right: 20px
+		top: 20px
+	.header__menu
+		position: fixed
+		top: -100%
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #695A4B
+		padding-top: 70px
+		transition: all 0.3s
+		overflow: auto
+		z-index: 5
+	.header__burger.active
+		&::before
+			transform: rotate(45deg)
+			top: 9px
+	.header__burger.active
+		&::after
+			transform: rotate(-45deg)
+			bottom: 9px
+	.header__burger.active
+		span
+			transform: scale(0)
+	.header__menu.active
+		top: 0
+		transition: all 0.3s
+	.me
+		padding: 60px 0px
+		&__item
+			display: block
+			width: 370px
+		&__img
+			margin: 0 auto
+			height: 420px
+			width: 100%
+		&__phone, &__adress, &__birth, &__citizen
+			margin-top: 20px
+			width: 100%
+		&__wrapper
+			width: 100%
+			padding: 10px 30px
+	.welcome
+		padding: 80px 5px
+		min-height: 250px
+		&__header
+			font-size: 30px
+		&__descr
+			font-size: 28px
+	.schulbildung
+		&__slider
+			z-index: 3
+			width: 430px
+		.title
+			font-size: 30px
+	.skills
+		&__items
+			width: 450px
+		&__item
+			width: 100%
+	.sprachen
+		&__items
+			width: 450px
+		&__item
+			width: 100%
+	.hobbys
+		&__list
+			width: 100%
+	.footer
+		height: 100%
+		&__contact
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__name, &__mail
+			margin-bottom: 20px
+		.stick
+			display: none
+
+@media (max-width: 575px)
+	.me
+		&__mt
+			margin-top: 0
+		&__item
+			width: 320px
+		&__img
+			width: 100%
+			height: 400px
+		&__phone, &__adress, &__birth, &__citizen
+			width: 100%
+		&__adress
+			span
+				justify-content: flex-start
+		&__number, &__street, &__date, &__statename
+			font-style: italic
+			display: inline
+		&__wrapper
+			padding: 10px 30px
+	.welcome
+		padding: 80px 5px
+		min-height: 200px
+		&__header
+			font-size: 28px
+		&__descr
+			font-size: 22px
+	.schulbildung
+		margin-top: 0
+		&__wrapper
+			margin: 0 20px
+		&__slider
+			width: 100%
+		.schulbildung__datum
+			font-size: 25px
+		.schulbildung__descr
+			font-size: 22px
+	.skills
+		&__items
+			width: 100%
+		&__item_brown
+			font-size: 21px
+	.sprachen
+		&__items
+			width: 100%
+		&__item_brown
+			font-size: 21px
+	.hobbys
+		&__items
+			height: 190px
+			margin-top: 20px
+		&__list
+			display: flex
+			flex-wrap: wrap
+		&__wrapper
+			margin: 0 20px
+
+@media (max-width: 450px)
+	.hobbys
+		&__list
+			display: block

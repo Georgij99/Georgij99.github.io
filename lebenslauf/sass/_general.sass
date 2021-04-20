@@ -1,0 +1,365 @@
+.on-top
+    position: fixed
+    bottom: 20px
+    right: 20px
+    width: 50px
+    height: 50px
+    text-align: center
+    line-height: 50px
+    font-size: 45px
+    cursor: pointer
+    z-index: 50
+    color: #FFBD44
+    visibility: hidden
+    &:hover
+        opacity: .8
+.header__burger
+    display: none
+.header
+    position: relative
+    width: 100%
+.header__body
+    display: flex
+    position: absolute
+    right: 30px
+    top: 30px
+.header__list
+    display: flex
+    justify-content: space-between
+    width: 650px
+    li
+        list-style: none
+    a
+        text-decoration: none
+        color: #f4f4f4
+.header__link
+    font-family: Rubik
+    font-weight: 400
+    color: black
+    font-size: 20px
+    text-transform: uppercase
+    color: #F4F4F4
+    &::after
+        content: ""
+        display: block
+        height: 4px
+        width: 15px
+        background-color: #FFBD44
+        transition: 0.5s
+    &:hover
+        &::after
+            width: 100%
+            transition: 0.5s
+// nav
+//     display: flex
+//     position: relative
+//     .nav__menu
+//         display: flex
+//         justify-content: space-between
+//     .nav__burger
+//         display: none
+//         position: absolute
+//         left: 50px
+//         top: 30px
+//     .nav__wrap
+//         position: absolute
+//         left: 50px
+//         top: 30px
+//     .nav__wrapper,
+//         width: 650px
+//         display: flex
+//         justify-content: space-between
+//         position: absolute
+//         top: 30px
+//         right: 50px
+//     .nav__item
+//         font-family: Rubik
+//         font-weight: 400
+//         color: black
+//         text-decoration: none
+//         font-size: 20px
+//         text-transform: uppercase
+//         color: #F4F4F4
+//         &::after
+//             content: ""
+//             display: block
+//             height: 4px
+//             width: 15px
+//             background-color: #FFBD44
+//             transition: 0.5s
+//         &:hover
+//             &::after
+//                 width: 100%
+//                 transition: 0.5s
+.me
+    padding-top: 150px
+    min-height: 825px
+    background: url('../img/bg.jpg') center center/cover no-repeat
+    &__item
+        max-width: 1000px
+        margin: 0px auto
+        background-color: #c4c4c4
+        display: flex
+        background: rgba(196, 196, 196, 0.82)
+    &__wrapper
+        padding: 30px 30px
+    &__mt
+        margin-top: 70px
+    &__name
+        font-family: 'Rubik'
+        font-weight: 400
+        font-size: 35px
+        color: #000000
+    &__phone, &__adress, &__birth, &__citizen
+        width: 450px
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        font-family: 'Rubik'
+        font-weight: 400
+        font-size: 23px
+        color: #000000
+    &__number, &__street, &__date, &__statename
+        font-style: italic
+    &__adress
+        span
+            display: flex
+            justify-content: flex-end
+    &__img
+        height: 600px
+        width: 522px
+        img
+            height: 100%
+            width: 100%
+            object-fit: cover
+.welcome
+    min-height: 300px
+    padding-top: 80px
+    &__header
+        text-align: center
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 34px
+        color: #000000
+    &__descr
+        text-align: center
+        margin-top: 20px
+        font-family: 'Roboto'
+        font-weight: 300
+        font-size: 32px
+        color: #000000
+        span
+            font-style: italic
+            text-decoration: underline
+            text-decoration-color: #ffbd44
+.schulbildung
+    margin-top: 80px
+    .title
+        text-align: center
+        font-family: Roboto
+        font-weight: 400
+        font-size: 34px
+        color: #000000
+        margin-bottom: 0
+    &__wrapper
+        height: 700px
+        margin: 50px 50px
+        background-color: #FBFBFB
+    &__slider
+        position: relative
+        width: 900px
+        margin: 0 auto
+        z-index: 3
+    &-item
+        margin-top: 153px
+        height: 400px
+        width: 360px
+        background-color: #695A4B
+        margin-right: 2px
+        .schulbildung__datum
+            padding-top: 75px
+            font-family: Rubik
+            font-weight: 400
+            font-size: 27px
+            text-align: center
+            color: #FFFFFF
+        .schulbildung__descr
+            margin-top: 64px
+            font-weight: normal
+            font-style: italic
+            font-size: 24px
+            text-align: center
+            color: #FFFFFF
+        .schulbildung__descr_mt
+            margin-top: 104px
+    &-item_brown
+        background-color: #5F493B
+    .slick-prev, .slick-next
+        position: absolute
+        border: none
+        background-color: #FBFBFB
+        top: 50%
+        transform: translateY(100%)
+        left: -62px
+        img
+            width: 30px
+            height: 50px
+    .slick-next
+        right: -62px
+        left: auto
+        z-index: 1
+    .slick-dots
+        padding: 0 0 0 0
+        text-align: center
+        display: flex // поставить кнопки в ряд
+        justify-content: center // выровнять по центру
+        list-style: none // убираем черные маркер
+    .slick-dots button
+        background: #eddfd477 // цвет фона
+        border: none // без рамки
+        border-radius: 50% // радиус закругления
+        height: 15px // высота точки
+        width: 15px // ширина точки
+        margin: 2px // отступы между точками
+        outline: none // убираем обводку
+        font-size: 0
+    .slick-dots li[class="slick-active"] button
+        background: #695A4B
+        color: #fff
+.skills
+    min-height: 600px
+    padding-top: 30px
+    .title
+        text-align: center
+        font-family: Roboto
+        font-weight: 400
+        font-size: 34px
+        color: #000000
+        margin-bottom: 0
+    &__items
+        margin: 0 auto
+        width: 1140px
+        margin-top: 50px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        width: 486px
+        height: 142px
+        background: #5F493B
+        margin-bottom: 25px
+        font-family: Roboto
+        font-weight: 400
+        font-size: 24px
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        &_tac
+            text-align: center
+        &_brown
+            background-color: #695A4B
+            font-family: Roboto
+            font-weight: 400
+            font-size: 24px
+            color: #FFFFFF
+            border: 3px solid #FBFBFB
+            border-radius: 5px
+.sprachen
+    min-height: 500px
+    padding-top: 80px
+    .title
+        text-align: center
+        font-family: Roboto
+        font-weight: 400
+        font-size: 34px
+        color: #000000
+        margin-bottom: 0
+    &__items
+        margin: 0 auto
+        width: 1140px
+        margin-top: 50px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        width: 486px
+        height: 142px
+        background: #695A4B
+        margin-bottom: 25px
+        font-family: Roboto
+        font-weight: 400
+        font-size: 24px
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        &_tac
+            text-align: center
+        &_brown
+            background-color: #695A4B
+            font-family: Roboto
+            font-weight: 400
+            font-size: 24px
+            color: #FFFFFF
+            border: 3px solid #FBFBFB
+            border-radius: 5px
+.hobbys
+    height: 400px
+    padding-top: 80px
+    &__wrapper
+        background-color: #FBFBFB
+        margin: 50px 50px
+    .title
+        text-align: center
+        font-family: Roboto
+        font-weight: 400
+        font-size: 34px
+        color: #000000
+    &__items
+        height: 130px
+        background-color: #FBFBFB
+        margin-top: 50px
+    &__list
+        display: flex
+        width: 787px
+        justify-content: space-between
+        margin: 0 auto
+        position: relative
+        top: 24px
+        li
+            font-family: Roboto
+            font-weight: 400
+            font-size: 24px
+            color: #4A4A4A
+.footer
+    height: 250px
+    background-color: #695A4B
+    padding: 35px 0 99px 0
+    .title
+        text-align: center
+        font-family: Roboto
+        font-weight: 400
+        font-size: 40px
+        color: #fff
+    &__wrapper
+        margin: 0 auto
+        margin-top: 55px
+        width: 700px
+    &__contact
+        font-family: Roboto
+        font-weight: 400
+        font-size: 21px
+        color: #FFFFFF
+        display: flex
+        justify-content: space-around
+    &__mail, &__number
+        color: #fff
+        font-style: italic
+        &:hover
+            color: #FFBD44
+    &__info
+        display: flex
+        justify-content: center
+        margin-top: 5px
